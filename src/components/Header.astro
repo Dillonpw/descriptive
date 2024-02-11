@@ -1,0 +1,22 @@
+---
+
+---
+
+<section class="bg-black text-white">
+	<nav class="m-2 flex flex-col items-end p-4">
+		<button class="cursor-pointer" onclick="toggleMenu()">press</button>
+		<ul id="dropdown" class="hidden">
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/blog">Blog</a></li>
+		</ul>
+	</nav>
+</section>
+<script>
+	const toggleMenu = () => {
+		const menu: HTMLElement | null = document.querySelector('#dropdown')
+		if (menu) {
+			menu.classList.toggle('hidden')
+		}
+	}
+</script>
